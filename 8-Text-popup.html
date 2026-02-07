@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text Pop Up</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: #492d3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff200;
+    opacity: 0;
+    animation: popup 2s ease-out infinite;
+}
+@keyframes popup {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+</style>
+</head>
+<body>
+<div class="text">HELLO JI</div>
+</body>
+</html>
